@@ -28,7 +28,7 @@ public class BallBeatIndicator extends BaseIndicatorController {
     @Override
     public void draw(Canvas canvas, Paint paint) {
         float circleSpacing = 4;
-        float radius = (getWidth() - circleSpacing * 2) / 6;
+        float radius = (getWidth() - circleSpacing * 2) / 10;
         float x = getWidth() / 2 - (radius * 2 + circleSpacing);
         float y = getHeight() / 2;
         for (int i = 0; i < 3; i++) {
