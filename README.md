@@ -1,17 +1,14 @@
-[![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-AVLoadingIndicatorView-green.svg?style=flat)](https://android-arsenal.com/details/1/2686)
 
 AVLoadingIndicatorView
 ===================
 
 ## Introduction
-AVLoadingIndicatorView is a collection of nice loading animations for Android.
+LoadingIndicatorView is a collection of nice loading animations for Android.
 
 You can also find iOS version of this [here](https://github.com/ninjaprox/NVActivityIndicatorView).
 
 ## Demo
-![](https://github.com/81813780/AVLoadingIndicatorView/blob/master/Demo2.gif)
-
-[Download Apk](https://github.com/81813780/AVLoadingIndicatorView/releases/download/1.0.1/app-debug.apk)
+![](https://github.com/googolmo/AVLoadingIndicatorView/blob/master/Demo2.gif)
 
 ## Usage
 
@@ -19,18 +16,21 @@ You can also find iOS version of this [here](https://github.com/ninjaprox/NVActi
 
 Add dependencies in build.gradle.
 ```groovy
+    repositories {
+        maven { url  "https://dl.bintray.com/googolmo/maven" }
+    }
+
     dependencies {
-       compile 'com.wang.avi:library:1.0.5'
-       compile 'com.nineoldandroids:library:2.4.0'
+       compile 'im.amomo.loading:library:1.0.7'
     }
 ```
 
 ### Step 2
 
-Add the AVLoadingIndicatorView to your layout:
+Add the LoadingIndicatorView to your layout:
 ```java
-    <com.wang.avi.AVLoadingIndicatorView
-        android:id="@+id/avloadingIndicatorView"
+    <im.amomo.loading.LoadingIndicatorView
+        android:id="@+id/LoadingIndicatorView"
         android:layout_width="wrap_content"  //or your custom size
         android:layout_height="wrap_content"  //or your custom size
         android:visibility="visible"  //visible or gone
@@ -44,11 +44,11 @@ Add the AVLoadingIndicatorView to your layout:
 It's very simple use just like Progressbar.
 ```java
    void startAnim(){
-        findViewById(R.id.avloadingIndicatorView).setVisibility(View.VISIBLE);
+        findViewById(R.id.LoadingIndicatorView).setVisibility(View.VISIBLE);
    }
    
    void stopAnim(){
-        findViewById(R.id.avloadingIndicatorView).setVisibility(View.GONE);
+        findViewById(R.id.LoadingIndicatorView).setVisibility(View.GONE);
    }
    
 ```

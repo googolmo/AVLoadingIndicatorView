@@ -18,24 +18,14 @@ android {
         abortOnError true
         disable 'InvalidPackage'
     }
+
+    resourcePrefix 'Loading'
 }
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     compile 'com.android.support:appcompat-v7:23.3.0'
 }
-
-//ext {
-//    PUBLISH_GROUP_ID = 'com.wang.avi'
-//    PUBLISH_VERSION = '1.0.5'
-//    PUBLISH_DES = 'Nice loading animations for Android'
-//    LIB_NAME = 'AVLoadingIndicatorView'
-//
-//    WEBSITE_URL = 'https://github.com/81813780/AVLoadingIndicatorView'
-//    ISSUE_TRACKER_URL = 'https://github.com/81813780/AVLoadingIndicatorView/issues'
-//    VSC_URL = 'https://github.com/81813780/AVLoadingIndicatorView'
-//}
-
 
 def getVersionName(String versionName) {
     if (isRelease()) {
@@ -58,5 +48,4 @@ def isRelease() {
     return false
 }
 
-apply from: 'gradle-mvn-push.gradle'
-//apply from: 'https://raw.githubusercontent.com/andforce/release-android-lib-to-jcenter/master/bintray.gradle'
+apply from: 'bintray.gradle'
