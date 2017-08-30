@@ -21,7 +21,7 @@ Add dependencies in build.gradle.
     }
 
     dependencies {
-       compile 'im.amomo.loading:library:1.0.7'
+       compile 'im.amomo.loading:library:1.1.0'
     }
 ```
 
@@ -100,7 +100,6 @@ As seen above in the **Demo**, the indicators are as follows:
  * `SemiCircleSpin`
 
 ## Thanks
-- [nineoldandroids](https://github.com/JakeWharton/NineOldAndroids)
 - [NVActivityIndicatorView](https://github.com/ninjaprox/NVActivityIndicatorView)
 - [Connor Atherton](https://github.com/ConnorAtherton)
 
