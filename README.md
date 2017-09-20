@@ -21,7 +21,7 @@ Add dependencies in build.gradle.
     }
 
     dependencies {
-       compile 'im.amomo.loading:library:1.1.0'
+       compile 'im.amomo.loading:library:1.1.1'
     }
 ```
 
